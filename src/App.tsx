@@ -1,5 +1,6 @@
 import HeroSection from "./sections/HeroSection";
 import MarketingSection from "./sections/MarketingSection";
+import SuccessStories from "./sections/SuccessStories";
 import SupportSection from "./sections/SupportServices";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
      <HeroSection />
      <MarketingSection />
      <SupportSection />
+     <SuccessStories />
     </>
   );
 }
