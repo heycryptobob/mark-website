@@ -18,7 +18,7 @@ const features = [
 function SupportSection() {
     return (
         <SectionWrapper>
-            <div className="flex md:gap-32 items-center">
+            <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">
                         <h2 className="text-3xl uppercase font-bold leading-tight"><span className="underline">Support</span> Services</h2>

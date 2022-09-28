@@ -5,7 +5,7 @@ interface ISectionWrapper {
 
 function SectionWrapper({ invert = false, children }: ISectionWrapper) {
 
-    const classNames = ["py-4 md:py-32"]
+    const classNames = ["py-16 md:py-32"]
     if (invert) {
         classNames.push("bg-white text-blue-800")
     } else {
@@ -14,7 +14,7 @@ function SectionWrapper({ invert = false, children }: ISectionWrapper) {
 
     return (
         <section className={classNames.join(" ")}>
-            <div className="container mx-auto md:px-16">{children}</div>
+            <div className="container mx-auto px-4 md:px-16">{children}</div>
         </section>
     )
 }

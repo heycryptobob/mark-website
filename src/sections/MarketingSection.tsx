@@ -18,7 +18,7 @@ const features = [
 function MarketingSection() {
     return (
         <SectionWrapper invert>
-            <div className="flex md:gap-32 items-center">
+            <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">
                         <h2 className="text-3xl uppercase font-bold leading-tight"><span className="underline">Marketing</span> Services</h2>
@@ -30,7 +30,7 @@ function MarketingSection() {
                 <div className="basis-1/2">
                     <div className="grid grid-cols-2">
                         {features.map((feature, key) => (
-                            <div className="flex flex-col items-center gap-2 p-4">
+                            <div key={key} className="flex flex-col items-center gap-2 p-4">
                                 <div>{feature.icon}</div>
                                 <div className="text-sm font-semibold uppercase text-center">{feature.text}</div>
                             </div>
