@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/mark-website/static/css/main.2c85805a.css",
-    "main.js": "/mark-website/static/js/main.19905826.js",
+    "main.css": "/mark-website/static/css/main.4a348e58.css",
+    "main.js": "/mark-website/static/js/main.1b37336f.js",
     "static/js/787.e91ac499.chunk.js": "/mark-website/static/js/787.e91ac499.chunk.js",
     "static/media/heroImage.png": "/mark-website/static/media/heroImage.9e2f2fd8c6b7ffec7fb7.png",
     "static/media/coingecko.svg": "/mark-website/static/media/coingecko.981a5f56118ad7ea15fe66e1ed7bccad.svg",
     "static/media/coinmarketcap.svg": "/mark-website/static/media/coinmarketcap.ed13cb023f58045a199eb787e56b46e6.svg",
     "index.html": "/mark-website/index.html",
-    "main.2c85805a.css.map": "/mark-website/static/css/main.2c85805a.css.map",
-    "main.19905826.js.map": "/mark-website/static/js/main.19905826.js.map",
+    "main.4a348e58.css.map": "/mark-website/static/css/main.4a348e58.css.map",
+    "main.1b37336f.js.map": "/mark-website/static/js/main.1b37336f.js.map",
     "787.e91ac499.chunk.js.map": "/mark-website/static/js/787.e91ac499.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c85805a.css",
-    "static/js/main.19905826.js"
+    "static/css/main.4a348e58.css",
+    "static/js/main.1b37336f.js"
   ]
 }
