@@ -1,18 +1,15 @@
 import SectionWrapper from "./SectionWrapper"
-
-function Icon() {
-    return <div className="bg-white w-8 h-8 rounded"></div>
-}
+import { FaMicrophone, FaPen, FaUsers, FaDesktop, FaFileContract, FaDog, FaMobileAlt } from "react-icons/fa"
 
 const features = [
-    { icon: <Icon />, text: <div>Community<br></br>Managers</div> },
-    { icon: <Icon />, text: <div>AMA<br></br>Hosts</div> },
-    { icon: <Icon />, text: <div>Content<br></br>Writers</div> },
-    { icon: <Icon />, text: <div>Website<br></br>Designers</div> },
-    { icon: <Icon />, text: <div>Voicechat<br></br>Moderators</div> },
-    { icon: <Icon />, text: <div>Contract<br></br>Developers</div> },
-    { icon: <Icon />, text: <div>NFT<br></br>Designers</div> },
-    { icon: <Icon />, text: <div>dApp<br></br>Developers</div> },
+    { icon: <FaUsers className="w-8 h-8" />, text: <div>Community<br></br>Managers</div> },
+    { icon: <FaMicrophone className="w-8 h-8" />, text: <div>AMA<br></br>Hosts</div> },
+    { icon: <FaPen className="w-8 h-8" />, text: <div>Content<br></br>Writers</div> },
+    { icon: <FaDesktop className="w-8 h-8" />, text: <div>Website<br></br>Designers</div> },
+    { icon: <FaMicrophone className="w-8 h-8" />, text: <div>Voicechat<br></br>Moderators</div> },
+    { icon: <FaFileContract className="w-8 h-8" />, text: <div>Contract<br></br>Developers</div> },
+    { icon: <FaDog className="w-8 h-8" />, text: <div>NFT<br></br>Designers</div> },
+    { icon: <FaMobileAlt className="w-8 h-8" />, text: <div>dApp<br></br>Developers</div> },
 ]
 
 function SupportSection() {
@@ -30,7 +27,7 @@ function SupportSection() {
                 <div className="basis-1/2">
                     <div className="grid grid-cols-2">
                         {features.map((feature, key) => (
-                            <div className="flex flex-col items-center gap-2 p-4">
+                            <div key={key} className="flex flex-col items-center gap-2 p-4">
                                 <div>{feature.icon}</div>
                                 <div className="text-sm font-semibold uppercase text-center">{feature.text}</div>
                             </div>
