@@ -26,7 +26,7 @@ function SuccessStories() {
                         <h2 className="text-3xl uppercase font-bold leading-tight"><span className="underline">Success</span> Stories</h2>
                         <p className="text-xl font-semibold">We <span className="underline">don't</span> settle for a 2X.</p>
                         <p className="text-xl font-semibold">The BSC King team has a track record of consistently delivering <span className="underline">high multiples</span> to our customers.</p>
-                        <a href="https://t.me/Mark_bscking" className="w-fit py-2 px-4 text-xl font-bold uppercase border-2 border-blue-800 hover:underline">Talk to us</a>
+                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit py-2 px-4 text-xl font-bold uppercase border-2 border-blue-800 hover:underline">Talk to us</a>
                     </div>
                 </div>
                 <div className="basis-1/2">
