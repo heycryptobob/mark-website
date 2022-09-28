@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.svg-fill-primary > g > path {
+    fill: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.svg-fill-white > g > path {
+    fill: rgb(255 255 255 / var(--tw-bg-opacity));
+}

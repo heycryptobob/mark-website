@@ -1,18 +1,17 @@
 import SectionWrapper from "./SectionWrapper"
-
-function Icon() {
-    return <div className="bg-blue-800 w-8 h-8 rounded"></div>
-}
+import { FaTwitter, FaTelegramPlane, FaMicrophone, FaYoutube, FaNewspaper, FaChartLine } from "react-icons/fa"
+import { ReactComponent as Coinmarketcap } from "../assets/images/coinmarketcap.svg"
+import { ReactComponent as Coingecko } from "../assets/images/coingecko.svg"
 
 const features = [
-    { icon: <Icon />, text: <div>Twitter<br></br>Influencers</div> },
-    { icon: <Icon />, text: <div>Telegram<br></br>Callgroups</div> },
-    { icon: <Icon />, text: <div>AMA<br></br>Sessions</div> },
-    { icon: <Icon />, text: <div>Youtube<br></br>Reviews</div> },
-    { icon: <Icon />, text: <div>Press<br></br>Releases</div> },
-    { icon: <Icon />, text: <div>CEX<br></br>Listings</div> },
-    { icon: <Icon />, text: <div>Coinmarketcap<br></br>Listing / Trending</div> },
-    { icon: <Icon />, text: <div>Coingecko<br></br>Listing / Trending</div> },
+    { icon: <FaTwitter className="w-8 h-8" />, text: <div>Twitter<br></br>Influencers</div> },
+    { icon: <FaTelegramPlane className="w-8 h-8" />, text: <div>Telegram<br></br>Callgroups</div> },
+    { icon: <FaMicrophone className="w-8 h-8" />, text: <div>AMA<br></br>Sessions</div> },
+    { icon: <FaYoutube className="w-8 h-8" />, text: <div>Youtube<br></br>Reviews</div> },
+    { icon: <FaNewspaper className="w-8 h-8" />, text: <div>Press<br></br>Releases</div> },
+    { icon: <FaChartLine className="w-8 h-8" />, text: <div>CEX<br></br>Listings</div> },
+    { icon: <Coinmarketcap className="w-8 h-8 svg-fill-primary" />, text: <div>Coinmarketcap<br></br>Listing / Trending</div> },
+    { icon: <Coingecko className="w-8 h-8 svg-fill-primary" />, text: <div>Coingecko<br></br>Listing / Trending</div> },
 ]
 
 function MarketingSection() {
