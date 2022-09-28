@@ -14,7 +14,7 @@ const features = [
 
 function SupportSection() {
     return (
-        <SectionWrapper>
+        <SectionWrapper id="support">
             <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">

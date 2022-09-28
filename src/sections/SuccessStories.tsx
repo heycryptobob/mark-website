@@ -19,7 +19,7 @@ const features = [
 
 function SuccessStories() {
     return (
-        <SectionWrapper invert>
+        <SectionWrapper id="success" invert>
             <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">

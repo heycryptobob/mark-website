@@ -3,7 +3,7 @@ import SectionWrapper from "./SectionWrapper"
 
 function HeroSection() {
     return (
-        <SectionWrapper>
+        <SectionWrapper id="hero">
             <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
                 <div className="basis-1/2">
                     <div className="uppercase font-bold flex flex-col gap-8">

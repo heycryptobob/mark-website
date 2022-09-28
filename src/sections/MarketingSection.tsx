@@ -16,7 +16,7 @@ const features = [
 
 function MarketingSection() {
     return (
-        <SectionWrapper invert>
+        <SectionWrapper id="marketing" invert>
             <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">

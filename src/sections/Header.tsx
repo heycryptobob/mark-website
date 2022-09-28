@@ -1,10 +1,11 @@
 import { FaCrown } from "react-icons/fa"
+import { Link } from "react-scroll";
 
 const links = [
     // { text: "Home", href: "#home" },
-    { text: "Marketing", href: "#marketing" },
-    { text: "Support", href: "#support" },
-    { text: "Success stories", href: "#success" },
+    { text: "Marketing", to: "marketing" },
+    { text: "Support", to: "support" },
+    { text: "Success stories", to: "success" },
 ]
 
 function Header() {
@@ -23,7 +24,7 @@ function Header() {
                     </div>
                     <div className="text-white text-base font-semibold uppercase hidden md:flex">
                         <div className="flex gap-16">
-                            {links.map((link, key) => (<a key={key} href={link.href} className="hover:underline">{link.text}</a>))}
+                            {links.map((link, key) => (<Link key={key} to={link.to} className="hover:underline" spy={true} smooth={true} duration={500}>{link.text}</Link>))}
                         </div>
                     </div>
                 </div>
