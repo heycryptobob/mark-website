@@ -24,7 +24,7 @@ function Header() {
                     </div>
                     <div className="text-white text-base font-semibold uppercase hidden md:flex">
                         <div className="flex gap-16">
-                            {links.map((link, key) => (<Link key={key} to={link.to} className="hover:underline" spy={true} smooth={true} duration={500}>{link.text}</Link>))}
+                            {links.map((link, key) => (<Link key={key} to={link.to} className="hover:underline hover:cursor-pointer" spy={true} smooth={true} duration={500}>{link.text}</Link>))}
                         </div>
                     </div>
                 </div>
