@@ -1,3 +1,4 @@
+import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import HeroSection from "./sections/HeroSection";
 import MarketingSection from "./sections/MarketingSection";
@@ -12,6 +13,7 @@ function App() {
       <MarketingSection />
       <SupportSection />
       <SuccessStories />
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,3 @@
-import SectionWrapper from "./SectionWrapper"
-
 const links = [
     // { text: "Home", href: "#home" },
     { text: "Marketing", href: "#marketing" },
