@@ -27,6 +27,7 @@ function Footer() {
                         </div>
                     ))}
                 </div>
+                <div className="mt-16 text-white">Built by <a href="https://b10k.io" target={"_blank"} rel="noreferrer" className="hover:underline font-semibold">[B10K.IO]</a></div>
             </div>
         </div>
     )
