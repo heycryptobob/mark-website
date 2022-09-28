@@ -2,15 +2,15 @@ const links = [
     {
         text: "Contact",
         items: [
-            { text: "Telegram", href: "" },
-            { text: "Email", href: "" },
+            { text: "Telegram", href: "https://t.me/Mark_bscking" },
+            { text: "Email", href: "mailto:mark_bscking@protonmail.com" },
         ]
     },
     {
         text: "Socials",
         items: [
-            { text: "Telegram", href: "" },
-            { text: "Twitter", href: "" },
+            { text: "Telegram", href: "https://t.me/MarkGems" },
+            { text: "Twitter", href: "https://twitter.com/mark_bscking" },
         ]
     },
 ]
@@ -23,7 +23,7 @@ function Footer() {
                     {links.map((section, key) => (
                         <div key={key} className="text-white flex flex-col gap-4">
                             <div className="uppercase font-bold">{section.text}</div>
-                            {section.items.map((item, k) => (<div key={k}><a href={item.href} className="hover:underline">{item.text}</a></div>))}
+                            {section.items.map((item, k) => (<div key={k}><a href={item.href} className="hover:underline" target={"_blank"} rel={"noreferrer"}>{item.text}</a></div>))}
                         </div>
                     ))}
                 </div>

@@ -18,7 +18,7 @@ function HeroSection() {
                     </div>
                 </div>
                 <div className="basis-1/2">
-                    <img src={heroImage} className="hidden lg:flex"/>
+                    <img src={heroImage} alt="Hero" className="hidden lg:flex"/>
                 </div>
             </div>
         </SectionWrapper>
