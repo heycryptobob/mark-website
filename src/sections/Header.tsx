@@ -1,5 +1,5 @@
-import { FaCrown } from "react-icons/fa"
 import { Link } from "react-scroll";
+import logo from "../assets/images/logo.png";
 
 const links = [
     { text: "About", to: "about" },
@@ -14,12 +14,8 @@ function Header() {
             <div className="container mx-auto px-4 md:px-16">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-4">
-                        <div className="p-4 bg-white text-black font-bold uppercase">
-                            <FaCrown className="w-8 h-8" />
-                        </div>
-                        <div className="text-white b">
-                            <div className="text-3xl font-bold">MARK</div>
-                            <div className="text-lg font-semibold tracking-wide">BSC KING</div>
+                        <div>
+                            <img src={logo} alt="logo" className="h-24" />
                         </div>
                     </div>
                     <div className="text-white text-base font-semibold uppercase hidden md:flex">
