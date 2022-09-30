@@ -4,7 +4,7 @@ import Header from "./Header"
 function HeroV2() {
     return (
         <div className="relative flex items-center justify-center overflow-hidden">
-            <video className="absolute z-10 w-auto min-w-full max-w-none" autoPlay muted loop>
+            <video className="absolute z-10 w-auto min-w-full max-w-none" autoPlay muted loop playsInline>
                 <source src={Video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
