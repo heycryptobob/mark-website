@@ -13,10 +13,10 @@ function HeroV2() {
                 <Header />
                 <div className="container mx-auto px-4 md:px-16">
                     <div className="mt-16 lg:mt-24 mb-32">
-                        <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
+                        <div className="flex flex-col lg:flex-row gap-4 md:gap-16 lg:items-center">
                             <div className="basis-1/2">
                                 <div className="uppercase font-bold flex flex-col gap-8">
-                                    <h2 className="text-4xl md:text-5xl text-white">
+                                    <h2 className="text-5xl text-white">
                                         <div className="leading-tight">
                                             <div>High</div>
                                             <div className="underline">Impact</div>
@@ -25,7 +25,14 @@ function HeroV2() {
                                             <div>Gamefi & Web3</div>
                                         </div>
                                     </h2>
-                                    <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Contact us</a>
+                                    <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-full md:w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Contact us</a>
+                                </div>
+                            </div>
+                            <div className="basis-1/2">
+                                <div className="flex flex-col items-end justify-end gap-4 text-white">
+                                    <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="uppercase font-bold w-full md:w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Book an AMA</a>
+                                    <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="uppercase font-bold w-full md:w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Get a <span className="underline">free</span> call</a>
+                                    <div className="text-xs uppercase">on the <a href="https://t.me/MarkGems" className="hover:underline font-bold">MarkGems channel</a></div>
                                 </div>
                             </div>
                         </div>

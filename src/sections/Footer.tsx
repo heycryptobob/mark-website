@@ -1,3 +1,4 @@
+import { FaCalendar, FaEnvelope, FaPhone, FaTelegram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const website = [
@@ -12,17 +13,24 @@ const links = [
     {
         text: "Contact",
         items: [
-            { text: "Telegram", href: "https://t.me/Mark_bscking" },
-            { text: "Email", href: "mailto:mark_bscking@protonmail.com" },
+            { text: "Telegram", href: "https://t.me/Mark_bscking", icon: <FaTelegram className="w-4 h-4" /> },
+            { text: "Email", href: "mailto:mark_bscking@protonmail.com", icon: <FaEnvelope className="w-4 h-4" /> },
         ]
     },
     {
         text: "Socials",
         items: [
-            { text: "Telegram", href: "https://t.me/MarkGems" },
-            { text: "Twitter", href: "https://twitter.com/mark_bscking" },
+            { text: "Telegram", href: "https://t.me/MarkGems", icon: <FaTelegram className="w-4 h-4" />},
+            { text: "Twitter", href: "https://twitter.com/mark_bscking", icon: <FaTwitter className="w-4 h-4"/> },
         ]
     },
+    {
+        text: "Actions",
+        items: [
+            { text: "Schedule a call", href: "https://t.me/Mark_bscking", icon: <FaPhone className="w-4 h-4" /> },
+            { text: "Book an AMA", href: "https://t.me/Mark_bscking", icon: <FaCalendar className="w-4 h-4" />},
+        ]
+    }
 ]
 
 function Footer() {
@@ -40,7 +48,11 @@ function Footer() {
                     {links.map((section, key) => (
                         <div key={key} className="text-white flex flex-col gap-4">
                             <div className="uppercase font-bold">{section.text}</div>
-                            {section.items.map((item, k) => (<div key={k}><a href={item.href} className="hover:underline" target={"_blank"} rel={"noreferrer"}>{item.text}</a></div>))}
+                            {section.items.map((item, k) => (
+                                <div key={k} className="flex items-center gap-2">
+                                    <span>{item.icon}</span>
+                                    <a href={item.href} className="hover:underline" target={"_blank"} rel={"noreferrer"}>{item.text}</a>
+                                </div>))}
                         </div>
                     ))}
                 </div>
