@@ -1,6 +1,8 @@
+import AboutSection from "./sections/AboutSection";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import HeroSection from "./sections/HeroSection";
+import HeroV2 from "./sections/HeroV2";
 import MarketingSection from "./sections/MarketingSection";
 import SuccessStories from "./sections/SuccessStories";
 import SupportSection from "./sections/SupportServices";
@@ -8,10 +10,11 @@ import SupportSection from "./sections/SupportServices";
 function App() {
   return (
     <>
-      <Header />
-      <HeroSection />
+      <HeroV2 />
+      {/* <HeroSection /> */}
+      <AboutSection invert/>
       <MarketingSection />
-      <SupportSection />
+      <SupportSection invert/>
       <SuccessStories />
       <Footer />
     </>

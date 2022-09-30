@@ -14,7 +14,7 @@ function HeroSection() {
                             <span>For crypto, NFT,</span><br></br>
                             <span>gamefi & web3</span><br></br>
                         </h2>
-                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit p-4 text-4xl bg-white text-blue-800 hover:underline">Contact us</a>
+                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit p-4 text-4xl bg-white text-black hover:underline">Contact us</a>
                     </div>
                 </div>
                 <div className="basis-1/2">

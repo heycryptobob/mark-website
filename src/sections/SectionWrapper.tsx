@@ -6,11 +6,11 @@ interface ISectionWrapper {
 
 function SectionWrapper({ id, invert = false, children }: ISectionWrapper) {
 
-    const classNames = ["py-16 md:py-64"]
+    const classNames = ["py-24 md:py-32"]
     if (invert) {
-        classNames.push("bg-white text-blue-800")
+        classNames.push("bg-white text-black")
     } else {
-        classNames.push("bg-blue-800 text-white")
+        classNames.push("bg-black text-white")
     }
 
     return (

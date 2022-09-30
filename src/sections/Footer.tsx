@@ -1,3 +1,13 @@
+import { Link } from "react-scroll";
+
+const website = [
+    { text: "Home", to: "header" },
+    { text: "About us", to: "about" },
+    { text: "Marketing services", to: "marketing" },
+    { text: "Support services", to: "support" },
+    { text: "Success stories", to: "success" },
+]
+
 const links = [
     {
         text: "Contact",
@@ -17,9 +27,16 @@ const links = [
 
 function Footer() {
     return (
-        <div className="py-16 bg-blue-800">
+        <div className="py-16 bg-black border-t">
             <div className="container mx-auto px-4 md:px-16">
-                <div className="flex gap-32">
+                <div className="flex flex-col md:flex-row gap-16 md:gap-32">
+                    <div>
+                    <div className="text-white flex flex-col gap-4">
+                        <div className="uppercase font-bold">Website</div>
+                        {website.map((link, k) => (<div key={k}><Link to={link.to} className="hover:underline hover:cursor-pointer" spy={true} smooth={true} duration={500}>{link.text}</Link></div>))}
+                    </div>
+                    </div>
+
                     {links.map((section, key) => (
                         <div key={key} className="text-white flex flex-col gap-4">
                             <div className="uppercase font-bold">{section.text}</div>

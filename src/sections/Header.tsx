@@ -2,7 +2,7 @@ import { FaCrown } from "react-icons/fa"
 import { Link } from "react-scroll";
 
 const links = [
-    // { text: "Home", href: "#home" },
+    { text: "About", to: "about" },
     { text: "Marketing", to: "marketing" },
     { text: "Support", to: "support" },
     { text: "Success stories", to: "success" },
@@ -10,11 +10,11 @@ const links = [
 
 function Header() {
     return (
-        <div className="py-8 lg:py-16 bg-blue-800">
+        <header id="header" className="py-8 lg:py-16 bg-transparent">
             <div className="container mx-auto px-4 md:px-16">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-4">
-                        <div className="p-4 bg-white text-blue-800 font-bold uppercase">
+                        <div className="p-4 bg-white text-black font-bold uppercase">
                             <FaCrown className="w-8 h-8" />
                         </div>
                         <div className="text-white b">
@@ -29,7 +29,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 

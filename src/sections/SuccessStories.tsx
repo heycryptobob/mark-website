@@ -1,3 +1,4 @@
+import { ISection } from "./ISection"
 import SectionWrapper from "./SectionWrapper"
 
 interface IGreenIcon {
@@ -17,16 +18,16 @@ const features = [
     { icon: <GreenIcon text="18x" />, text: "Twoge" },
 ]
 
-function SuccessStories() {
+function SuccessStories({ invert = false }: ISection) {
     return (
-        <SectionWrapper id="success" invert>
+        <SectionWrapper id="success" invert={invert}>
             <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">
                         <h2 className="text-3xl uppercase font-bold leading-tight"><span className="underline">Success</span> Stories</h2>
-                        <p className="text-xl font-semibold">We <span className="underline">don't</span> settle for a 2X.</p>
+                        <p className="text-xl font-semibold">We <span className="underline">don't</span> settle for a 2X. We will work hard to make sure your story is an inspirational one.</p>
                         <p className="text-xl font-semibold">The BSC King team has a track record of consistently delivering <span className="underline">high multiples</span> to our customers.</p>
-                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit py-2 px-4 text-xl font-bold uppercase border-2 border-blue-800 hover:underline">Talk to us</a>
+                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit py-4 px-8 text-2xl font-bold uppercase border-2 border-white hover:underline">Talk to us</a>
                     </div>
                 </div>
                 <div className="basis-1/2">

@@ -1,5 +1,6 @@
 import SectionWrapper from "./SectionWrapper"
 import { FaMicrophone, FaPen, FaUsers, FaDesktop, FaFileContract, FaDog, FaMobileAlt } from "react-icons/fa"
+import { ISection } from "./ISection"
 
 const features = [
     { icon: <FaUsers className="w-8 h-8" />, text: <div>Community<br></br>Managers</div> },
@@ -12,16 +13,16 @@ const features = [
     { icon: <FaMobileAlt className="w-8 h-8" />, text: <div>dApp<br></br>Developers</div> },
 ]
 
-function SupportSection() {
+function SupportSection({ invert = false }: ISection) {
     return (
-        <SectionWrapper id="support">
+        <SectionWrapper id="support" invert={invert}>
             <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">
                         <h2 className="text-3xl uppercase font-bold leading-tight"><span className="underline">Support</span> Services</h2>
                         <p className="text-xl font-semibold">Project leaders should be future-focused. Having reliable support staff is a critical to <span className="underline">enable success</span>.</p>
                         <p className="text-xl font-semibold">We staff your project with experienced and dependable team members so that you can focus on the <span className="underline">bigger picture</span>.</p>
-                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit py-2 px-4 text-xl font-bold uppercase border-2 border-white hover:underline">Contact us</a>
+                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit py-4 px-8 text-2xl font-bold uppercase border-2 border-black hover:underline">Contact us</a>
                     </div>
                 </div>
                 <div className="basis-1/2">

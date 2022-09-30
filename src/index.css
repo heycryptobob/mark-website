@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .svg-fill-primary > g > path {
-    fill: rgb(30 64 175 / var(--tw-bg-opacity));
+    fill: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .svg-fill-white > g > path {
