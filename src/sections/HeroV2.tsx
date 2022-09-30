@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Video from "../assets/videos/video.mp4"
 import Header from "./Header"
 
@@ -30,8 +31,12 @@ function HeroV2() {
                             </div>
                             <div className="basis-1/2">
                                 <div className="flex flex-col items-end justify-end gap-4 text-white">
-                                    <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="uppercase font-bold w-full md:w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Book an AMA</a>
-                                    <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="uppercase font-bold w-full md:w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Get a <span className="underline">free</span> call</a>
+                                    <AnimationOnScroll animateIn="animate__bounceIn">
+                                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="uppercase font-bold w-full md:w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Book an AMA</a>
+                                    </AnimationOnScroll>
+                                    <AnimationOnScroll animateIn="animate__bounceIn">
+                                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="uppercase font-bold w-full md:w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Get a <span className="underline">free</span> call</a>
+                                    </AnimationOnScroll>
                                     <div className="text-xs uppercase">on the <a href="https://t.me/MarkGems" className="hover:underline font-bold">MarkGems channel</a></div>
                                 </div>
                             </div>
