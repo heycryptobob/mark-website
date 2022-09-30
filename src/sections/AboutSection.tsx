@@ -3,7 +3,7 @@ import { FaShoppingBag, FaRocket, FaCalendarCheck, FaNewspaper, FaBtc, FaDesktop
 import { ISection } from "./ISection"
 
 const features = [
-    { icon: <FaShoppingBag className="w-4 h-4" />, text: <div>Fill your private or presale</div> },
+    // { icon: <FaShoppingBag className="w-4 h-4" />, text: <div>Fill your private or presale</div> },
     { icon: <FaNewspaper className="w-4 h-4" />, text: <div>Prelaunch / Stealth marketing</div> },
     { icon: <FaRocket className="w-4 h-4" />, text: <div>Launch marketing</div> },
     { icon: <FaCalendarCheck className="w-4 h-4" />, text: <div>Milestone / Feature marketing</div> },
