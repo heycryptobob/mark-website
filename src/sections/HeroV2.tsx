@@ -1,4 +1,3 @@
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Video from "../assets/videos/video.mp4"
 import Header from "./Header"
 
