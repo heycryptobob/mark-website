@@ -1,5 +1,5 @@
 import SectionWrapper from "./SectionWrapper"
-import { FaShoppingBag, FaRocket, FaCalendarCheck, FaNewspaper, FaBtc, FaDesktop, FaList, FaStar, FaUsers } from "react-icons/fa"
+import { /*FaShoppingBag,*/ FaRocket, FaCalendarCheck, FaNewspaper, FaBtc, FaDesktop, FaList, FaStar, FaUsers } from "react-icons/fa"
 import { ISection } from "./ISection"
 
 const features = [
