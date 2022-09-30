@@ -6,7 +6,7 @@ interface IGreenIcon {
 }
 
 function GreenIcon({ text }: IGreenIcon) {
-    return <div className="bg-green-500 p-4 rounded text-xl font-bold text-white uppercase w-24 text-center">{text}</div>
+    return <div className="bg-green-500 p-4 text-xl font-bold text-white uppercase w-24 text-center">{text}</div>
 }
 
 const features = [
