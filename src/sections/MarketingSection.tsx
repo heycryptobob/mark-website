@@ -18,13 +18,13 @@ const features = [
 function MarketingSection({ invert = false }: ISection) {
     return (
         <SectionWrapper id="marketing" invert={invert}>
-            <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
+            <div className="flex flex-col lg:flex-row gap-16 lg:items-center js-show-on-scroll">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">
                         <h2 className="text-3xl uppercase font-bold leading-tight"><span className="underline">Marketing</span> Services</h2>
                         <p className="text-xl font-semibold">Whether you’re operating an established project or just starting out, having an effective marketing strategy is one of the keys to <span className="underline">success</span>. </p>
                         <p className="text-xl font-semibold">We build marketing strategies to the needs and expectations of your target customers in order to ensure your projects continued <span className="underline">growth</span>.</p>
-                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-full md:w-fit py-4 px-8 text-2xl font-bold uppercase border-2 border-white hover:underline">Reach out</a>
+                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-full md:w-fit py-4 px-8 text-2xl font-bold uppercase border-2 border-white hover:underline text-center md:text-left">Reach out</a>
                     </div>
                 </div>
                 <div className="basis-1/2">

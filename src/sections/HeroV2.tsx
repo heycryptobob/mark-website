@@ -1,5 +1,4 @@
 import Video from "../assets/videos/video.mp4"
-import heroImage from "../assets/images/heroImage.png"
 import Header from "./Header"
 
 function HeroV2() {
@@ -26,7 +25,7 @@ function HeroV2() {
                                             <div>Gamefi & Web3</div>
                                         </div>
                                     </h2>
-                                    <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit p-4 text-2xl bg-white text-black hover:underline">Contact us</a>
+                                    <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-fit p-4 text-2xl bg-white text-black hover:underline text-center md:text-left">Contact us</a>
                                 </div>
                             </div>
                         </div>

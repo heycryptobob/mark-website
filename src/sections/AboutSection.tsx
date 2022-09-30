@@ -17,14 +17,14 @@ const features = [
 function AboutSection({ invert = false }: ISection) {
     return (
         <SectionWrapper id="about" invert={invert}>
-            <div className="flex flex-col lg:flex-row gap-32 lg:items-top">
+            <div className="flex flex-col lg:flex-row gap-32 lg:items-top js-show-on-scroll">
                 <div className="basis-1/2">
                     <div className="flex flex-col gap-8">
                         <h2 className="text-3xl uppercase font-bold leading-tight"><span className="underline">About</span> Mark</h2>
                         <p className="text-xl font-semibold">Mark is a Crypto, NFT, GameFi, and Web3 marketing agency. Mark and his team have supported projects that went on to make over <span className="underline">600X</span> with multi-million dollar market caps.</p>
                         <p className="text-xl font-semibold">Mark has been working within the Crypto space for multiple years. Over this time, he has developed deep relationships with key <span className="underline">partners</span> and <span className="underline">influencers</span> across multiple blockchain ecosystems.</p>
                         <p className="text-xl font-semibold">Based on your objectives, Mark will work with you to <span className="underline">define and execute</span> a marketing plan that works within your budget in order to achieve maximum <span className="underline">impact</span>.</p>
-                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-full md:w-fit py-4 px-8 text-2xl font-bold uppercase border-2 border-black hover:underline">Get started</a>
+                        <a href="https://t.me/Mark_bscking" target={"_blank"} rel="noreferrer" className="w-full md:w-fit py-4 px-8 text-2xl font-bold uppercase border-2 border-black hover:underline text-center md:text-left">Get started</a>
                     </div>
                 </div>
                 <div className="basis-1/2">

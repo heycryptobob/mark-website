@@ -1,7 +1,5 @@
 import AboutSection from "./sections/AboutSection";
 import Footer from "./sections/Footer";
-import Header from "./sections/Header";
-import HeroSection from "./sections/HeroSection";
 import HeroV2 from "./sections/HeroV2";
 import MarketingSection from "./sections/MarketingSection";
 import SuccessStories from "./sections/SuccessStories";
