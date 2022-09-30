@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import SectionWrapper from "./SectionWrapper"
 import { FaMicrophone, FaPen, FaUsers, FaDesktop, FaFileContract, FaDog, FaMobileAlt } from "react-icons/fa"
 import { ISection } from "./ISection"
@@ -28,10 +29,12 @@ function SupportSection({ invert = false }: ISection) {
                 <div className="basis-1/2">
                     <div className="grid grid-cols-2">
                         {features.map((feature, key) => (
-                            <div key={key} className="flex flex-col items-center gap-2 p-4">
-                                <div>{feature.icon}</div>
-                                <div className="text-sm font-semibold uppercase text-center">{feature.text}</div>
-                            </div>
+                            <AnimationOnScroll key={key} animateIn="animate__bounceIn">
+                                <div key={key} className="flex flex-col items-center gap-2 p-4">
+                                    <div>{feature.icon}</div>
+                                    <div className="text-sm font-semibold uppercase text-center">{feature.text}</div>
+                                </div>
+                            </AnimationOnScroll>
                         ))}
                     </div>
                 </div>

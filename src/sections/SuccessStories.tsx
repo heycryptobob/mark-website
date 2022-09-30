@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { ISection } from "./ISection"
 import SectionWrapper from "./SectionWrapper"
 
@@ -33,12 +34,12 @@ function SuccessStories({ invert = false }: ISection) {
                 <div className="basis-1/2">
                     <div className="flex flex-col px-0 md:px-16">
                         {features.map((feature, key) => (
-                            <div key={key}>
+                            <AnimationOnScroll key={key} animateIn="animate__bounceIn">
                                 <div className="flex items-center justify-between py-2 group">
                                     <div className="text-xl font-semibold uppercase text-left">{feature.text}</div>
                                     <div className="transition ease-in-out hover:scale-125 hover:shadow hover:cursor-pointer">{feature.icon}</div>
                                 </div>
-                            </div>
+                            </AnimationOnScroll>
                         ))}
                     </div>
                 </div>

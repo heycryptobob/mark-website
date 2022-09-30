@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import SectionWrapper from "./SectionWrapper"
 import { /*FaShoppingBag,*/ FaRocket, FaCalendarCheck, FaNewspaper, FaBtc, FaDesktop, FaList, FaStar, FaUsers } from "react-icons/fa"
 import { ISection } from "./ISection"
@@ -32,10 +33,12 @@ function AboutSection({ invert = false }: ISection) {
                         <h2 className="text-3xl uppercase font-bold leading-tight"><span className="underline">How</span> Mark can help</h2>
                         <div className="flex flex-col gap-4">
                             {features.map((feature, key) => (
-                                <div key={key} className="flex flex-row gap-4 capitalize items-center text-lg font-semibold">
-                                    <div>{feature.icon}</div>
-                                    <div>{feature.text}</div>
-                                </div>
+                                <AnimationOnScroll key={key} animateIn="animate__bounceIn">
+                                    <div className="flex flex-row gap-4 capitalize items-center text-lg font-semibold">
+                                        <div>{feature.icon}</div>
+                                        <div>{feature.text}</div>
+                                    </div>
+                                </AnimationOnScroll>
                             ))}
                         </div>
                     </div>
